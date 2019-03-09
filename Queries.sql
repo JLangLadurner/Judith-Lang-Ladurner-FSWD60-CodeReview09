@@ -118,6 +118,12 @@ INNER JOIN `Car_park` ON fk_car_id = car_id
 INNER JOIN `start_loc` ON fk_start_loc_id = start_loc_id
 INNER JOIN `end_loc` ON fk_end_loc_id = end_loc_id;
 
+-- counts all cars which are available
+
+SELECT COUNT(*) FROM `Car_park`
+WHERE available = 1;
+
+
 
 
 
